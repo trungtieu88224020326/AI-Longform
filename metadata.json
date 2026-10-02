@@ -1,0 +1,6 @@
+{
+  "name": "Editorial Interactive Story Builder",
+  "description": "Text-to-interactive story converter and Canva-style editor for newsrooms based on the 18-block design system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-editorial-serif: 'Merriweather', Georgia, serif;
+    --font-editorial-ui: 'Merriweather Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-editorial-body: Arial, Helvetica, sans-serif;
+    --color-accent-rose: #b13460;
+    --color-accent-subdued: rgba(177, 52, 96, 0.08);
+    --color-dark-neutral: #222222;
+    --color-border-hairline: #e0e0e0;
+  }
+}
+
+.font-editorial-serif {
+  font-family: var(--font-editorial-serif);
+}
+
+.font-editorial-ui {
+  font-family: var(--font-editorial-ui);
+}
+
+.font-editorial-body {
+  font-family: var(--font-editorial-body);
+}
+
+/* Strict flat styling - remove any ambient dropshadows */
+.editorial-flat-box {
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+}
+
+.editorial-drop-cap::first-letter {
+  float: left;
+  font-family: var(--font-editorial-serif);
+  font-size: 3.5rem;
+  line-height: 0.85;
+  padding-top: 0.15rem;
+  padding-right: 0.65rem;
+  padding-bottom: 0.1rem;
+  color: #b13460;
+  font-weight: 700;
+}
+
+/* Custom scrollbars for sidebars and canvas */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #c7c7c7;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
